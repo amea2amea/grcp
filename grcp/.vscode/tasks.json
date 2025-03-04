@@ -1,0 +1,33 @@
+{
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "Build Step1",
+            "command": "${workspaceFolder}/step1/build.sh",
+            "options": {
+                "cwd": "${workspaceFolder}/step1"
+            },
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "シェルスクリプトでビルド"
+        },
+        {
+            "type": "shell",
+            "label": "Build Step2",
+            "command": "${workspaceFolder}/step2/build.sh",
+            "options": {
+                "cwd": "${workspaceFolder}/step2"
+            },
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "シェルスクリプトでビルド"
+        }
+    ],
+    "version": "2.0.0"
+}

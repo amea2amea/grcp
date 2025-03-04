@@ -1,0 +1,21 @@
+// Protobufのバージョンを指定
+syntax = "proto3";
+// 名前空間
+package example;
+
+// grcpのサービスの定義
+// サーバー側に提供するサービス
+service HelloService {
+  // リクエストを受け取り、レスポンスを返すRPC
+  rpc SayHello (HelloRequest) returns (HelloResponse);
+}
+
+// リクエストメッセージ
+message HelloRequest {
+  string name = 1;
+}
+
+// レスポンスメッセージ
+message HelloResponse {
+  string message = 1;
+}
