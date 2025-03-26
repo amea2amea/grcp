@@ -1,3 +1,0 @@
-/Users/petori/Documents/git/grcp/step3/build/server/CMakeFiles/server.dir
-/Users/petori/Documents/git/grcp/step3/build/server/CMakeFiles/edit_cache.dir
-/Users/petori/Documents/git/grcp/step3/build/server/CMakeFiles/rebuild_cache.dir

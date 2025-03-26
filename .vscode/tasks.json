@@ -27,6 +27,34 @@
                 "isDefault": true
             },
             "detail": "シェルスクリプトでビルド"
+        },
+        {
+            "type": "shell",
+            "label": "Build Step3",
+            "command": "${workspaceFolder}/step3/build.sh",
+            "options": {
+                "cwd": "${workspaceFolder}/step3"
+            },
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "シェルスクリプトでビルド"
+        },
+        {
+            "type": "shell",
+            "label": "Build Step4",
+            "command": "${workspaceFolder}/step4/build.sh",
+            "options": {
+                "cwd": "${workspaceFolder}/step4"
+            },
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "シェルスクリプトでビルド"
         }
     ],
     "version": "2.0.0"
