@@ -30,8 +30,8 @@ mkdir "$BUILD_DIR"
 # Protoファイルのコード生成
 "$PROTO_DIR/proto.sh"
 
-# serverのソースコードをビルド
-"$SERVER_DIR/server.sh"
-
 # clientのソースコードをビルド
 "$CLIENT_DIR/client.sh"
+
+# serverのソースコードをビルド
+"$SERVER_DIR/server.sh"

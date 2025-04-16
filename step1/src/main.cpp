@@ -1,7 +1,7 @@
-#include <grpcpp/grpcpp.h>
+// インクルード
 #include <iostream>
 
 int main()
 {
-  std::cout << "gRPC client setup complete!" << std::endl;
+  std::cout << "gRPC setup complete!" << std::endl;
 }

@@ -14,11 +14,8 @@ set -xue
 
 # 各種定義
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-PROTO_DIR="$SCRIPT_DIR/proto"
 BIN_DIR="$SCRIPT_DIR/bin"
 BUILD_DIR="$SCRIPT_DIR/build"
-SERVER_DIR="$SCRIPT_DIR/src/server"
-CLIENT_DIR="$SCRIPT_DIR/src/client"
 
 # binディレクトリの削除と生成
 rm -rf "$BIN_DIR"
@@ -27,9 +24,3 @@ mkdir -p "$BIN_DIR"
 # buildディレクトリの削除と生成
 rm -rf "$BUILD_DIR"
 mkdir "$BUILD_DIR"
-
-# Protoファイルのコード生成
-"$PROTO_DIR/proto.sh"
-
-# serverのソースコードをビルド
-"$SERVER_DIR/server.sh"

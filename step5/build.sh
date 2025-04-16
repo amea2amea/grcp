@@ -14,11 +14,12 @@ set -xue
 
 # 各種定義
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-PROTO_DIR="$SCRIPT_DIR/proto"
+APP_DIR="$SCRIPT_DIR/app"
+PROTO_DIR="$APP_DIR/proto"
 BIN_DIR="$SCRIPT_DIR/bin"
 BUILD_DIR="$SCRIPT_DIR/build"
-SERVER_DIR="$SCRIPT_DIR/src/server"
-CLIENT_DIR="$SCRIPT_DIR/src/client"
+SERVER_DIR="$APP_DIR/server"
+CLIENT_DIR="$APP_DIR/client"
 
 # binディレクトリの削除と生成
 rm -rf "$BIN_DIR"
