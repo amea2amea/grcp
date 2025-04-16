@@ -20,7 +20,7 @@ public:
 };
 
 // メイン関数
-int main()
+int main(int argc, char **argv)
 {
   // サーバーアドレス
   std::string server_address("0.0.0.0:50051");

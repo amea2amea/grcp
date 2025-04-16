@@ -1,12 +1,8 @@
 // インクルード
-#include <iostream>
-#include <memory>
-#include <string>
 #include <grpcpp/grpcpp.h>
 #include "grpc_service_data.grpc.pb.h"
-#include "data_type.h"
 
-int main()
+int main(int argc, char **argv)
 {
   // サーバーアドレス
   std::string server_address = "localhost:50051";
@@ -20,7 +16,7 @@ int main()
     return 1;
   }
   // 代理のクライアントを作成
-  std::shared_ptr<grpc_service_data::GrpcService::Stub> stub = grpc_service_data::GrpcService::NewStub(channel);
+  std::unique_ptr<grpc_service_data::GrpcService::Stub> stub = grpc_service_data::GrpcService::NewStub(channel);
   if (!stub)
   {
     std::cerr << "Stub creation failed." << std::endl;

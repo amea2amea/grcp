@@ -4,25 +4,18 @@ syntax = "proto3";
 // 名前空間
 package grpc_service_data;
 
-// grcpのメッセージ定義
-// 共通インターフェイス
-message GrpcValue {
-    map<string, string> data = 1;
-}
+// grpcのメッセージ定義
 // クライアントからのリクエスト
 message ServiceDataRequest {
     string type = 1; 
 }
+
 // サーバーからの応答
 message ServiceDataResponse {
-    oneof data {
-        GrpcValue position_data = 1;
-        GrpcValue workoffset_data = 2;
-  }
+    map<string, string> data = 1;
 }
 
-
-// grcpのメソッド定義
+// grpcのメソッド定義
 service GrpcService {
     rpc GetData(ServiceDataRequest) returns (ServiceDataResponse);
 }
