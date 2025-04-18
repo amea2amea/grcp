@@ -21,7 +21,6 @@ message ServiceDataResponse {
   }
 }
 
-
 // grcpのメソッド定義
 service GrpcService {
     rpc GetData(ServiceDataRequest) returns (ServiceDataResponse);
