@@ -17,7 +17,8 @@
 # cmake --build build
 
 ### 手動で実行コマンドを行う方法 ###
-# ./server.sh
+# デバッグ :  ./app/server/server.sh
+# リリース :  ./app/server/server.sh release
 
 #### シェルの設定 ####
 # -x : コマンドの実行時、コマンドと引数の内容を表示を表示

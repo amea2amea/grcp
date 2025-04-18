@@ -4,8 +4,16 @@ cmake_minimum_required(VERSION 3.31)
 # プロジェクト名と使用する言語を設定
 project(grpc_example CXX)
 
-# Release指定
-set(CMAKE_BUILD_TYPE Release)
+# Debug/Releaseの指定
+set(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} -g3 -ggdb")
+set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} -O3")
+
+# ビルドタイプを表示
+message(STATUS "Build Type: ${CMAKE_BUILD_TYPE}")
+
+# ビルドディレクトリの出力設定
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/../../bin/${CMAKE_BUILD_TYPE})
+set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY_RELEASE ${CMAKE_BINARY_DIR}/../../lib/${CMAKE_BUILD_TYPE})
 
 # macOS のターゲットバージョンを指定
 set(CMAKE_OSX_DEPLOYMENT_TARGET "15.1" CACHE STRING "macOS deployment target version")
@@ -15,9 +23,6 @@ set(CMAKE_TOOLCHAIN_FILE "$ENV{HOME}/Documents/software/development/vcpkg/script
 
 # gRPC のインストールパスを追加
 set(CMAKE_PREFIX_PATH "$ENV{HOME}/Documents/software/development/vcpkg/installed/arm64-osx/share")
-
-# 実行ファイルの出力先を設定
-set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/../../bin)
 
 # 必要なパッケージを探す
 find_package(gRPC CONFIG REQUIRED)
