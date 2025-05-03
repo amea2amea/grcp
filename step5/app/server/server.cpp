@@ -14,7 +14,7 @@ int main(int argc, char **argv)
   std::string grpc_server_address = "0.0.0.0:50051";
   GrpcServer grpc_server(grpc_server_address, grpc_service);
   std::cout << "Starting gRPC server..." << std::endl;
-  // gRPCサーバー動作中ß
+  // gRPCサーバー動作中
   grpc_server.Run();
   return 0;
 }

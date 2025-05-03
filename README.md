@@ -12,3 +12,7 @@ step4:	clientとserver間でのHellow World
 step5:  ３層アーキテクチャに分離 -> Protocol Buffersにおいて独自型を生成して行うと、セグメントエラーになる
 
 step6:  ３層アーキテクチャに分離 -> Protocol Buffersにおいて独自型をやめる
+
+step7:  nc層、service層、grpc-server層層をライブラリ化
+
+step8:  google test (gtest)を追加
