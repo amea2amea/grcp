@@ -1,7 +1,7 @@
-# grcpを学ぶ
-このリポジトリは、grcpを学ぶためにSTEPごとに内容を分けてまとめたものです。
+# gRPCを学ぶ
+このリポジトリは、gRPCを学ぶためにSTEPごとに内容を分けてまとめたものです。
 
-step1:  grcpをリンクしてビルド
+step1:  gRPCをリンクしてビルド
 
 step2:  protoファイルからcppを自動生成してリンクしてビルド
 
@@ -13,6 +13,6 @@ step5:  ３層アーキテクチャに分離 -> Protocol Buffersにおいて独�
 
 step6:  ３層アーキテクチャに分離 -> Protocol Buffersにおいて独自型をやめる
 
-step7:  nc層、service層、grpc-server層層をライブラリ化
+step7:  nc層、service層、grpc-server層をライブラリ化
 
 step8:  google test (gtest)を追加

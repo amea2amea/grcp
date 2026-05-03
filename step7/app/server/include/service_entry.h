@@ -3,7 +3,7 @@
 
 // インクルード
 #include <string>
-#include <memory.h>
+#include <memory>
 
 class IServiceEntry
 {

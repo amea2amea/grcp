@@ -3,7 +3,7 @@
 
 // インクルード
 #include <string>
-#include <memory.h>
+#include <memory>
 #include "service_entry.h"
 
 class GrpcServerEntry
